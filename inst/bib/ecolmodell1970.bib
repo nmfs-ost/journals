@@ -2,9 +2,9 @@
 %%% ====================================================================
 %%%  BibTeX-file{
 %%%     author          = "Nelson H. F. Beebe",
-%%%     version         = "1.02",
-%%%     date            = "05 October 2023",
-%%%     time            = "11:08:39 MDT",
+%%%     version         = "2.00",
+%%%     date            = "20 May 2025",
+%%%     time            = "06:22:00 MDT",
 %%%     filename        = "ecolmodell1970.bib",
 %%%     address         = "University of Utah
 %%%                        Department of Mathematics, 110 LCB
@@ -12,9 +12,8 @@
 %%%                        Salt Lake City, UT 84112-0090
 %%%                        USA",
 %%%     telephone       = "+1 801 581 5254",
-%%%     FAX             = "+1 801 581 4148",
 %%%     URL             = "https://www.math.utah.edu/~beebe",
-%%%     checksum        = "39464 5554 20891 231276",
+%%%     checksum        = "10762 5556 20887 231424",
 %%%     email           = "beebe at math.utah.edu, beebe at acm.org,
 %%%                        beebe at computer.org (Internet)",
 %%%     codetable       = "ISO/ASCII",
@@ -39,7 +38,7 @@
 %%%
 %%%                            https://www.sciencedirect.com/journal/ecological-modelling
 %%%
-%%%                        At version 1.02, the COMPLETE year coverage
+%%%                        At version 2.00, the COMPLETE year coverage
 %%%                        looked like this:
 %%%
 %%%                             1975 (  35)    1977 (  37)    1979 (  63)
@@ -89,6 +88,7 @@
     "\ifx \undefined \circled      \def \circled #1{(#1)}            \fi" #
     "\ifx \undefined \degree       \def \degree   {$^o$}             \fi" #
     "\ifx \undefined \gene         \def \gene      #1{{{\sf #1}}}    \fi" #
+    "\ifx \undefined \geoname      \def \geoname   #1{{#1}}          \fi" #
     "\ifx \undefined \k            \let \k = \c                      \fi" #
     "\ifx \undefined \mathbb       \def \mathbb #1{{\bf #1}}         \fi" #
     "\ifx \undefined \mathbf       \def \mathbf #1{{\bf #1}}         \fi" #
@@ -108,7 +108,6 @@
                     155 S 1400 E RM 233,
                     Salt Lake City, UT 84112-0090, USA,
                     Tel: +1 801 581 5254,
-                    FAX: +1 801 581 4148,
                     e-mail: \path|beebe@math.utah.edu|,
                             \path|beebe@acm.org|,
                             \path|beebe@computer.org|(Internet),
@@ -197,7 +196,8 @@
 @Article{Olufeagba:1975:BVA,
   author =       "B. J. Olufeagba and R. H. Flake and N. E. Armstrong",
   title =        "A boundary value approach for estuarine water quality
-                 modelling with results for {Jamaica Bay, New York}",
+                 modelling with results for \geoname{Jamaica Bay, New
+                 York}",
   journal =      j-ECOL-MODELL,
   volume =       "1",
   number =       "1",
@@ -510,7 +510,7 @@
 @Article{Kamp-Nielsen:1975:KAA,
   author =       "Lars Kamp-Nielsen",
   title =        "A kinetic approach to the aerobic sediment-water
-                 exchange of phosphorus in {Lake Esrom}",
+                 exchange of phosphorus in \geoname{Lake Esrom}",
   journal =      j-ECOL-MODELL,
   volume =       "1",
   number =       "2",
@@ -820,7 +820,7 @@
   author =       "James Zucchetto",
   title =        "Energy-economic theory and mathematical models for
                  combining the systems of man and nature, case study:
-                 the urban region of {Miami, Florida}",
+                 the urban region of \geoname{Miami, Florida}",
   journal =      j-ECOL-MODELL,
   volume =       "1",
   number =       "4",
@@ -1034,7 +1034,7 @@
 @Article{Nihoul:1976:IMM,
   author =       "Jacques C. J. Nihoul",
   title =        "An interdisciplinary mathematical model applied to the
-                 {Southern Bight of the North Sea}",
+                 \geoname{Southern Bight of the North Sea}",
   journal =      j-ECOL-MODELL,
   volume =       "2",
   number =       "1",
@@ -1131,7 +1131,7 @@
 @Article{Mitsch:1976:EMW,
   author =       "William J. Mitsch",
   title =        "Ecosystem modeling of waterhyacinth management in
-                 {Lake Alice, Florida}",
+                 \geoname{Lake Alice, Florida}",
   journal =      j-ECOL-MODELL,
   volume =       "2",
   number =       "1",
@@ -1315,8 +1315,9 @@
 
 @Article{Bayley:1976:SIE,
   author =       "Suzanne Bayley and Howard T. Odum",
-  title =        "Simulation of interrelations of the {Everglades}'
-                 marsh, peat, fire, water and phosphorus",
+  title =        "Simulation of interrelations of the
+                 \geoname{Everglades}' marsh, peat, fire, water and
+                 phosphorus",
   journal =      j-ECOL-MODELL,
   volume =       "2",
   number =       "3",
@@ -2264,8 +2265,8 @@
 
 @Article{DAmato:1977:KMC,
   author =       "R. D'Amato and T. N. Lee",
-  title =        "A kinematic model of the city of {Miami} ocean outfall
-                 plume behavior",
+  title =        "A kinematic model of the city of \geoname{Miami} ocean
+                 outfall plume behavior",
   journal =      j-ECOL-MODELL,
   volume =       "3",
   number =       "3",
@@ -3013,7 +3014,7 @@
   author =       "E. Halfon and D. C. L. Lam",
   title =        "The effects of advection --- diffusion processes on
                  the eutrophication of large lakes, a hypothetical
-                 example: {Lake Superior}",
+                 example: \geoname{Lake Superior}",
   journal =      j-ECOL-MODELL,
   volume =       "4",
   number =       "2--3",
@@ -3037,8 +3038,8 @@
 @Article{Cloern:1978:SMC,
   author =       "James E. Cloern",
   title =        "Simulation model of \bioname{Cryptomonas ovata}
-                 population dynamics in southern {Kootenay Lake, British
-                 Columbia}",
+                 population dynamics in southern \geoname{Kootenay Lake,
+                 British Columbia}",
   journal =      j-ECOL-MODELL,
   volume =       "4",
   number =       "2--3",
@@ -3061,8 +3062,8 @@
 
 @Article{Ikeda:1978:DWQ,
   author =       "Saburo Ikeda and Norihiko Adachi",
-  title =        "A dynamic water quality model of {Lake Biwa} --- a
-                 simulation study of the lake eutrophication",
+  title =        "A dynamic water quality model of \geoname{Lake Biwa}
+                 --- a simulation study of the lake eutrophication",
   journal =      j-ECOL-MODELL,
   volume =       "4",
   number =       "2--3",
@@ -3298,7 +3299,7 @@
 @Article{Horwood:1978:RHM,
   author =       "J. W. Horwood and J. A. Bedwell",
   title =        "Results from a hydrodynamical mathematical model of
-                 the {Irish Sea}",
+                 the \geoname{Irish Sea}",
   journal =      j-ECOL-MODELL,
   volume =       "4",
   number =       "4",
@@ -3579,8 +3580,8 @@
 
 @Article{Krishnamurthy:1978:HDS,
   author =       "L. Krishnamurthy",
-  title =        "Herbage dynamics of some semi-arid {Indian} grazing
-                 lands",
+  title =        "Herbage dynamics of some semi-arid \geoname{Indian}
+                 grazing lands",
   journal =      j-ECOL-MODELL,
   volume =       "5",
   number =       "1",
@@ -4189,8 +4190,8 @@
 
 @Article{Yezzi:1979:DMN,
   author =       "D. J. Yezzi and A. P. Uzzo",
-  title =        "Dynamic model of nutrification in {Huntington Bay, New
-                 York}",
+  title =        "Dynamic model of nutrification in \geoname{Huntington
+                 Bay, New York}",
   journal =      j-ECOL-MODELL,
   volume =       "6",
   number =       "1",
@@ -4377,7 +4378,8 @@
                  and Even Mehlum and Angelika Melhuus and Hans Martin
                  Seip",
   title =        "A mathematical model for the distribution and
-                 abundance of benthic algae in a {Norwegian} fjord",
+                 abundance of benthic algae in a \geoname{Norwegian}
+                 fjord",
   journal =      j-ECOL-MODELL,
   volume =       "6",
   number =       "2",
