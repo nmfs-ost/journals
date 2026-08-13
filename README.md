@@ -18,7 +18,7 @@ Where, `journals` is currently focused on information stored in the latter.
 
 Clone the GitHub repository using
 ```
-git clone https://github.com/nmfs-fish-tools/journals.git
+git clone https://github.com/nmfs-ost/journals.git
 ```
 and use your favorite text editor to view the [bib files](inst/bib).
 You can also view a complete list of the fishery journals that are covered in

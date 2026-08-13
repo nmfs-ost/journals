@@ -8,7 +8,7 @@
 #' @export
 #'
 find_bibs <- function() {
-  org <- "nmfs-fish-tools"
+  org <- "nmfs-ost"
   repo <- "journals"
   url <- paste0(
     "https://api.github.com/repos/",
