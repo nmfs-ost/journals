@@ -8,11 +8,11 @@
 #' @export
 #'
 find_bibs <- function() {
-  org <- "nmfs-ost"
-  repo <- "journals"
   url <- paste0(
     "https://api.github.com/repos/",
-    org, "/", repo,
+    github_organization,
+    "/",
+    github_repository,
     "/git/trees/main:inst/bib"
   )
   info <- system(paste("curl", url), intern = TRUE)

@@ -7,11 +7,12 @@
 #'
 download_bibs <- function(to = getwd()) {
   dir.create(to, recursive = TRUE, showWarnings = FALSE)
-  org <- "nmfs-ost"
-  repo <- "journals"
   files <- find_bibs()
   url <- paste0(
-    "https://raw.githubusercontent.com/", org, "/", repo,
+    "https://raw.githubusercontent.com/",
+    github_organization,
+    "/",
+    github_repository,
     "/main/inst/bib/"
   )
   purrr::walk2(
