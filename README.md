@@ -1,18 +1,18 @@
-# journals
+`journals` stores .bib entries for over thirty different fisheries journals.
+For each journal, a complete index of all articles ever published is quality
+checked before being combined into fishery_journals.bib. Users can reference
+unique keys from this massive bib file and never have to worry about keys
+changing over time even if they update the .bib file.
 
-`journals` provides easy access to a selection of .bib files stored in the
-[TeX User Group bibliography archive](http://ftp.math.utah.edu/pub/tex/bib/).
-
-First and foremost, the authors of `journals` would like to thank
-Nelson H. F. Beebe for his tireless dedication to
-archiving robust bibliographic information and
-for being willing to extend his tools to journals outside of his domain.
+First and foremost, the authors of `journals` would like to thank Nelson H. F.
+Beebe for his tireless dedication to archiving robust bibliographic information
+and for being willing to extend his tools to journals outside of his domain.
 Second, we encourage readers to peruse the
-[full](http://ftp.math.utah.edu/pub/tex/bib/#download) and
-[fisheries research](http://ftp.math.utah.edu/pub/tex/bib/index-fish.html)
-archives kindly hosted by the
-[University of Utah's Department of Mathematics](https://www.math.utah.edu/).
-Where, `journals` is currently focused on information stored in the latter.
+[full](http://ftp.math.utah.edu/pub/tex/bib/#download) and [fisheries
+research](http://ftp.math.utah.edu/pub/tex/bib/index-fish.html) archives kindly
+hosted by the [University of Utah's Department of
+Mathematics](https://www.math.utah.edu/). Where, `journals` is currently
+focused on information stored in the latter.
 
 ## Installation
 
@@ -20,9 +20,17 @@ Clone the GitHub repository using
 ```
 git clone https://github.com/nmfs-ost/journals.git
 ```
-and use your favorite text editor to view the [bib files](inst/bib).
-You can also view a complete list of the fishery journals that are covered in
-[fishery-journals.txt](inst/bib/fishery-journals.txt).
+and use your favorite text editor to view the [bib files](tex/bib). You can
+also view a complete list of the fishery journals that are covered in
+[fishery-journals.txt](tex/bib/fishery-journals.txt).
+
+You can also install the R package, which comes with bib/fishery_journals.bib,
+a single file that includes all of the entries from each journal. We find that
+{pak} is the best way to install this R package but feel free to use any method
+that works with R packages on GitHub.
+```
+pak::pak("nmfs-ost/journals")
+```
 
 ## Use
 
@@ -51,6 +59,8 @@ For example, the bib :key: for Scheffel *et al.* (2020) with a title of
 "Coupling acoustic tracking with conventional tag returns to estimate mortality
 for a coastal flatfish with high rates of emigration"
 is `Scheffel:2020:CAT`.
+
+Additionally, for fishery_journals.bib we prefix the key with the journal abbreviation so keys never change through time regardless of how many journals we add to the repository. So, if you are using the full file, bib/fishery_journals.bib, keys look like the following example: `aquacfishfish:Zorita:2021:SDE`.
 
 ### {RefManageR}
 

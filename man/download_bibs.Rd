@@ -4,10 +4,15 @@
 \alias{download_bibs}
 \title{Download .bib files}
 \usage{
-download_bibs(to = getwd())
+download_bibs(to = getwd(), from = c("inst", "tex"))
 }
 \arguments{
 \item{to}{A file path to a directory for the downloaded .bib files.}
+
+\item{from}{A string specifying if you want the bib files from inst/bib
+or tex/bib, where both are folders within in the package available on
+GitHub. Only the suffix is needed, and the default is \code{"inst"}. All
+options are shown in the function call.}
 }
 \description{
 Download .bib files

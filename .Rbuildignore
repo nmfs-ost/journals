@@ -3,3 +3,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 inst/bib
+^tex/bib$
+^software$
+^data-raw$

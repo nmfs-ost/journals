@@ -16,9 +16,9 @@ jobs:
       - name: Get list of .bib files
         run: |
           wget -O fishery-journals.txt http://www.math.utah.edu/~beebe/.fishery-journals/fishery-journals.txt
-          mv fishery-journals.txt inst/bib/fishery-journals.txt
+          mv fishery-journals.txt tex/bib/fishery-journals.txt
       - name: Fetch .bib files
-        run: for f in ` cat inst/bib/fish*txt `; do rsync -av rsync://ftp.math.utah.edu/bib/$f ./inst/bib/$f; done
+        run: for f in ` cat tex/bib/fish*txt `; do rsync -av rsync://ftp.math.utah.edu/bib/$f ./tex/bib/$f; done
       - name: Get last commit msg
         id: commit-msg
         run: |
