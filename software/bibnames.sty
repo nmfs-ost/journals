@@ -1,0 +1,46 @@
+% Source: https://mirrors.ctan.org/info/biblio/bibnames.sty
+% Public domain; Nelson H. F. Beebe, Version 1.04 (13 June 1992).
+% The texnames.sty dependency is intentionally omitted when this file is
+% incorporated into journals-bibnames.sty.
+\def\ifundefined#1{\expandafter\ifx\csname#1\endcsname\relax}
+\ifundefined{CMR}%
+    \def\CMR{Computer Modern}%
+\fi
+\ifundefined{CWEB}%
+    \def\CWEB{{\tt CWEB}}%
+\fi
+\ifundefined{emdash}%
+    \def\emdash{\penalty\exhyphenpenalty---\penalty\exhyphenpenalty}%
+\fi
+\ifundefined{FWEB}%
+    \def\FWEB{{\tt FWEB}}%
+\fi
+\ifundefined{ndash}%
+    \def\ndash{\penalty\exhyphenpenalty--\penalty\exhyphenpenalty}%
+\fi
+\ifundefined{noopsort}%
+    \def\noopsort#1{}%
+\fi
+\ifundefined{PLOT}%
+    \def\PLOT{\hbox{\raise.2ex\hbox{$<$}\kern-.06em\hbox{PLOT79
+               \kern-.3em\hbox{\raise.2ex\hbox{$>$}}}}}%
+\fi
+\ifundefined{POSTSCRIPT}%
+    \font\sc = cmcsc10
+    \def\POSTSCRIPT{{\sc Post\-Script}}%
+\fi
+\ifundefined{PS}%
+    \let\PS = \POSTSCRIPT
+\fi
+\ifundefined{singleletter}%
+    \def\singleletter#1{#1}%
+\fi
+\ifundefined{tubissue}%
+    \def\tubissue#1#2{\TUB~#1, no.~#2}%
+\fi
+\ifundefined{TUB}%
+    \def\TUB{{\it TUG\-boat\/}}%
+\fi
+\ifundefined{WEB}%
+    \def\WEB{{\tt WEB}}%
+\fi

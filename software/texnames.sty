@@ -1,0 +1,68 @@
+% Source: https://mirrors.ctan.org/info/biblio/texnames.sty
+% Public domain; Nelson H. F. Beebe, Version 1.10 (02 March 1998).
+\ifx\sc\undefined
+    \def\sc{%
+      \expandafter\ifx\the\scriptfont\fam\nullfont
+        \font\temp = cmr7 \temp
+      \else
+        \the\scriptfont\fam
+      \fi
+      \def\uppercasesc{\char\uccode`}%
+    }%
+\fi
+\ifx\uppercasesc\undefined
+  \let\uppercasesc = \relax
+\fi
+\def\TeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\spacefactor1000 }%
+\ifx\AmS\undefined
+    \def\AmS{{\the\textfont2 A}\kern-.1667em\lower.5ex\hbox
+        {\the\textfont2 M}\kern-.125em{\the\textfont2 S}}
+\fi
+\ifx\AMS\undefined \let\AMS=\AmS \fi
+\ifx\AmSLaTeX\undefined
+    \def\AmSLaTeX{\AmS-\LaTeX}
+\fi
+\ifx\AMSLaTeX\undefined \let\AMSLaTeX=\AmSLaTeX \fi
+\ifx\AmSTeX\undefined
+    \def\AmSTeX{$\cal A$\kern-.1667em\lower.5ex\hbox{$\cal M$}%
+            \kern-.125em$\cal S$-\TeX}%
+\fi
+\ifx\AMSTEX\undefined \let\AMSTEX=\AmSTeX \fi
+\ifx\AMSTeX\undefined \let\AMSTeX=\AmSTeX \fi
+\ifx\BibTeX\undefined
+    \def\BibTeX{B{\sc \uppercasesc i\kern-.025em \uppercasesc b}\kern-.08em
+                \TeX}%
+\fi
+\ifx\BIBTeX\undefined \let\BIBTeX=\BibTeX \fi
+\ifx\BIBTEX\undefined \let\BIBTEX=\BibTeX \fi
+\ifx\LAMSTeX\undefined
+    \def\LAMSTeX{L\raise.42ex\hbox{\kern-.3em\the\scriptfont2 A}%
+                 \kern-.2em\lower.376ex\hbox{\the\textfont2 M}%
+                 \kern-.125em {\the\textfont2 S}-\TeX}%
+\fi
+\ifx\LamSTeX\undefined \let\LamSTeX=\LAMSTeX \fi
+\ifx\LAmSTeX\undefined \let\LAmSTeX=\LAMSTeX \fi
+\ifx\LaTeX\undefined
+    \def\LaTeX{L\kern-.36em\raise.3ex\hbox{\sc \uppercasesc a}\kern-.15em\TeX}%
+\fi
+\ifx\LATEX\undefined \let\LATEX=\LaTeX \fi
+\ifx\LaTeXe\undefined
+    \def\LaTeXe{\LaTeX{}\kern.05em2$_{\textstyle\varepsilon}$}
+\fi
+\ifx\MF\undefined
+    \ifx\manfnt\undefined
+            \font\manfnt=logo10
+    \fi
+    \ifx\manfntsl\undefined
+            \font\manfntsl=logosl10
+    \fi
+    \def\MF{{\ifdim\fontdimen1\font>0pt \let\manfnt = \manfntsl \fi
+      {\manfnt META}\-{\manfnt FONT}}\spacefactor1000 }%
+\fi
+\ifx\METAFONT\undefined \let\METAFONT=\MF \fi
+\ifx\SLITEX\undefined
+    \def\SLITEX{S\kern-.065em L\kern-.18em\raise.32ex\hbox{i}\kern-.03em\TeX}%
+\fi
+\ifx\SLiTeX\undefined \let\SLiTeX=\SLITEX \fi
+\ifx\SliTeX\undefined \let\SliTeX=\SLITEX \fi
+\ifx\SLITeX\undefined \let\SLITeX=\SLITEX \fi

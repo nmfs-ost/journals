@@ -23,7 +23,7 @@ find_bibs <- function(from = c("inst", "tex")) {
   files <- gsub(
     pattern = "^.+: |,|\\\"",
     replacement = "",
-    grep("bib", info, value = TRUE)
+    grep("bib|sty", info, value = TRUE)
   )
   return(files)
 }
